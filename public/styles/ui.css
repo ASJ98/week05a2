@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.stock {
+  border: thin solid red;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.menu {
+  display: flex;
+  background-color: white;
+  color: black;
+}

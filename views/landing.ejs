@@ -1,0 +1,28 @@
+<!-- an ejs template is like an html file with some server side programming language within -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic" />
+    <!-- remember public was made the root folder for our static files that can be served -->
+    <!-- styles is in the public folder -->
+    <link rel="stylesheet" href="styles/ui.css" />
+  </head>
+
+  <body>
+    <h1>Products</h1>
+
+    <h2>Welcome <%= data %></h2>
+
+    <div class="menu">
+      <% stock.forEach(element => {%>
+      <div class="stock"><%=element.name %></div>
+      <% }) %>
+    </div>
+
+    <footer>company info here</footer>
+  </body>
+</html>
